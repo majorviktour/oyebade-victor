@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator in Jquery</title>
+        <link rel="stylesheet" href="C:\Users\major\Documents\Calculator\calci.css">
+        <link rel="stylesheet" href="https://codepen.io/rizkhal/pen/LVWmRP">
+        <style>
+            #img1{
+                height:250px;
+                width: 250px;
+                border: 2px black solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="calculator">
+            <p>Jquery Calculator</p>
+            <div class="calc-row">
+              <div class="screen">0123456789</div>
+            </div>
+            <div class="calc-row">
+              <div class="button">C</div>
+              <div class="button">CE</div>
+              <div class="button backspace">back</div>
+              <div class="button plus-minus">+/-</div>
+              <div class="button">%</div>
+            </div>
+            <div class="calc-row">
+              <div class="button">7</div>
+              <div class="button">8</div>
+              <div class="button">9</div>
+              <div class="button device">/</div>
+              <div class="button">squrt</div>
+            </div>
+            <div class="calc-row">
+              <div class="button">4</div>
+              <div class="button">5</div>
+              <div class="button">6</div>
+              <div class="button multiply">*</div>
+              <div class="button inverse">1/x</div>
+            </div>
+            <div class="calc-row">
+              <div class="button">1</div>
+              <div class="button">2</div>
+              <div class="button">3</div>
+              <div class="button minus">-</div>
+              <div class="button pi">π</div>
+            </div>
+            <div class="calc-row">
+              <div class="button zero">0</div>
+              <div class="button decimal">.</div>
+              <div class="button">+</div>
+              <div class="button equal">=</div>
+            </div>
+        </div>
+          
+        <script src="C:\Users\major\Desktop\Jquery\jquery-3.6.4.min.js"></script>
+        <script src="C:\Users\major\Desktop\Jquery\jquery-ui-dark"></script>
+        <script src="C:\Users\major\Documents\Calculator\calci.js"></script>
+        <script>
+           // $(document).ready(function(){
+               //
+        </script>
+    </body>
+    </html>
+    
+
+
+
+    
+    <!--<h1> Resizable Interaction in jQuery UI</h1>
+    <div>
+        <img src="C:\Users\major\Pictures\Photos-001\e35dba70-7c8b-480c-bfb6-223769dd715a.jpg" id="img1" alt="Javascript">
+        
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        var Language = 
+        $(document).ready(function(){
+            $("#img1").resizable({
+                //animate: true,
+                //containment: "parent",
+                maxHeight: 400,
+                maxWidth: 400,
+                minHeight: 150,
+                minWidth: 150,
+                ghost: true
+              
+            })
+            
+    <!--<h1> Sortable Interaction in jQuery UI</h1>
+    <div>
+        <ul class="sort">
+            <li id="sortable">Item1</li>
+            <li id="sortable">Item2</li>
+            <li id="sortable">Item3</li>
+            <li id="sortable">Item4</li>
+            <li id="sortable">Item5</li>
+            <li id="sortable">Item6</li>
+            <li id="sortable">Item7</li>
+
+        </ul>
+        
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        var Language = 
+        $(document).ready(function(){
+            $(".sort").sortable({
+                opacity: 0.5,
+                cursor: "grabbing",
+                delay: 300, //to delay when grabbing the box
+                distance: 50
+              
+            })
+            
+        });
+    <!--<h1> Draggable Interaction in jQuery UI</h1>
+    <div>
+        <div class="box">
+            Box1
+
+        </div>
+        <div class="box">
+            Box2
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        var Language = 
+        $(document).ready(function(){
+            $(".box").draggable({
+               // axis: "x", //for horizontal dragging only
+                cursor: "grabbing",
+                opacity: "0.1",
+                //containment:"parent" //to move the box only within the other box
+                //grid: [400,400]
+                snap: true,
+                snapTolerance: 100
+                
+            })
+            
+        });
+
+<!--<h1> Widget Modification in jQuery UI</h1>
+<div id="dialog" title="Title 1">
+    This is a customizable dialog box
+
+</div>
+<button id="btn1">GET</button>
+<button id="btn2">SET</button>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+    var Language = 
+    $(document).ready(function(){
+        $("#dialog").dialog({
+            draggable: true,
+            resizable: true,
+            closeOnEscape: true,
+            modal: false,
+            autoOpen: true,
+            height:250,
+            width:250
+        })
+        $("#btn1").click(function(){
+           // alert("GET is working")
+           var modal = $("#dialog").dialog("option","height")
+           alert(modal)
+        })
+        $("#btn2").click(function(){
+          //  alert("SET is working")
+          $("#dialog").dialog("option","height", 300)
+        })
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+   <!--<h1> Autocomplete Widget in jQuery UI</h1>
+   Favorite Language: <input type="text" id="input">
+   <button id="btn1">Submit</button>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        var Language = 
+        $(document).ready(function(){
+            $("#input").autocomplete({
+                source: ["HTML","CSS","Javascript","PHP",
+        "java","python","C","C++","C#","Perl","Ruby",
+        "Scala","COBOL", "Basic","Fortran","Lisp","TypeScript"]
+            },{
+                delay: 2000,
+                minLenght: 3,
+                autoFocus: false
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+<!--<h1> Message Box in jQuery UI</h1>
+    First Name: <input type="first name">
+    <button id="btn1">Dialog Box</button>
+    <div id="dialog" title="Title using attribute">
+        This is a customizable dialog box
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#dialog").dialog("open");
+            })
+            $("#dialog").dialog({
+                title:"Title using property",
+                draggable:false,
+                resizable:false,
+                closeOnEscape: false,
+                modal:true,
+                autoOpen: false 
+               
+                
+            });
+        });
+    </script>
+    
+
+
+
+
+
+<h1> Accordion widget in jQuery UI</h1>
+    <div id="div1">
+        <h2>HTML</h2>
+         <div>
+            <P>HTML stands yuvjigliugiulguj jbighioh jvui</P>
+         </div>
+         <h2>CSS</h2>
+         <div>
+            <P>CSS stands yuvjigliugiulguj jbighioh jvui</P>
+         </div>
+         <h2>JAVASCRIPT</h2>
+         <div>
+            <P>JAVASCRIPT stands yuvjigliugiulguj jbighioh jvui</P>
+         </div>
+         <h2>JQUERY</h2>
+         <div>
+            <P>JQUERY stands yuvjigliugiulguj jbighioh jvui</P>
+         </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#div1").accordion({
+                collapsible: true, // makes all panels collapsible
+                active: false, // sets all panels to start collapsed
+                heightStyle: "content", // adjusts panel height to content height
+                icons: {
+                    header: "ui-icon-caret-1-s",
+                    activeHeader: "ui-icon-caret-1-n"
+                },
+                animate: 2000,
+                event: "mouseover"
+            });
+        });
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--<h1> Tool Tip widget in jQuery UI</h1>
+    <div id="div1">
+        <p>Name <input type="text" id="tool" title="" placeholder="Enter Name"></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#tool").tooltip({
+                track:true,
+                content:"This is the place for name",
+                show:{effect:"pulsate", duration:2000},
+                hide:{effect:"explode", duration:2000},
+            });
+        });
+    </script>
+
+    <!--<h1>Date picker widget in jQuery UI</h1>
+    <div id="div1">
+        <p>Date <input type="text" id="date" placeholder="Enter Date"></p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $("#date").datepicker({
+                showOtherMonths: true,
+                selectOtherMonths: true,
+                showButtonPanel: true,
+                changeMonth: true,
+                changeYear: true,
+                minDate: new Date(2015,1,5),
+                maxDate: new Date (2025,1,5),
+                numberOfMonths: 2,
+                dateFormat: "dd/mm/yy"
+
+                
+            });
+        });
+    </script><!-->
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+    <!--<h1>Jquery Dom Manipulation</h1>
+    <h2>Click on the button present below</h2>
+    <span id="span1"></span>
+    <div class="div1" style="background-color: aquamarine;">
+    <p class="p1" id="idp2">This is<i> box 1</i> </p>
+    </div>
+    <br>
+    <button id="btn1">Append</button>
+    <button id="btn2">Prepend</button>
+    <button id="btn3">Before</button>
+    <button id="btn4">After</button>
+    <button id="btn5">Remove</button>
+    <button id="btn6">Empty</button>
+ 
+
+ 
+
+
+    
+    
+    
+    
+    <!--<div>
+        <img src="C:\Users\major\Pictures\resturants\pizzalogo.jpg" alt="something" id="img">
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+    <!--<h1>Jquery Callbacks & Chaining</h1>
+    <button id="btn">Animate</button>
+    <br>
+    <br>
+    <div>
+        <img src="C:\Users\major\Pictures\resturants\pizzalogo.jpg" alt="something" id="img">
+    </div>
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--<h1>Effects in Jquery</h1>
+    <button id="btn">Animate</button>
+    <br>
+    <br>
+    <button id="btn1">Toggle</button>
+    <div>
+        <img src="C:\Users\major\Pictures\resturants\pizzalogo.jpg" alt="something" id="img">
+    </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   <!--<button id="btn7">Slide up</button>
+    <button id="btn8">Slide Down</button>
+    <button id="btn9">Slide-Toggle </button>
+    <button id="btn10">Stop </button>
+    <br>
+    <br>
+    <img src="C:\Users\major\Pictures\foodpix\chicken1.jpeg" alt="JavaScript" id="img1" width="250px ">
+
+    
+    
+    
+    
+    
+    
+    <!--<button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+    <br>
+    <br>
+    <button id="btn4">Fade-in</button>
+    <button id="btn5">Fade-out</button>
+    <button id="btn6">Fade-Toggle </button>
+
+    <img src="C:\Users\major\Pictures\foodpix\chicken1.jpeg" alt="JavaScript" id="img1" width="250px ">
+
+
+
+    <!--<h1>JQuery Selectors</h1>
+    <p>This is paragraph 1 outside div tags</p>
+    <p>This is paragraph 2 outside div tags</p>
+
+    <div id="div1" class="divv">
+        <p id="p1">This is paragraph 1</p>
+        <p>This is paragraphy 2</p>
+    </div>
+    <div id="div2" class="divv">
+        <p>This is paragraph 3</p>
+        <p>This is paragraphy 4</p>
+    </div><!-->
+    <!--<div id="div3">
+        <ul>
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ul>
+    </div>
+    <button onclick="func1()">CLICK me </button>
+    <!--<img src="C:\Users\major\Pictures\foodpix\Allfood.jpg" alt="JS" id="img1">
+    <button onclick="func1()">FADE</button>
+        <!-->
+  
+
+
